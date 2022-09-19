@@ -94,4 +94,4 @@ app.get("/ads/:id/discord", async (req, res) => {
   return res.json({ discord: ad.discord });
 });
 
-app.listen(4000);
+app.listen(process.env.PORT || 3000);
