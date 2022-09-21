@@ -22,9 +22,8 @@ function App() {
   const [games, setGames] = useState<GameProps[]>([]);
 
   useEffect(()=> {
-    axios('http://localhost:4000/games')
+    axios('https://nlw-esports-2022.herokuapp.com/games')
       .then(response => setGames(response.data));
-
   }, []);
 
   return (
