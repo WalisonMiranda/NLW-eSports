@@ -20,7 +20,7 @@ export function Home() {
   };
 
   useEffect(() => {
-    fetch("http://192.168.1.4:4000/games")
+    fetch("https://nlw-esports-2022.herokuapp.com/games")
       .then((response) => response.json())
       .then((data) => setGames(data));
   }, []);
