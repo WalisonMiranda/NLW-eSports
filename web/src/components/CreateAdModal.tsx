@@ -47,7 +47,7 @@ export function CreateAdModal() {
       );
 
       alert("Successfully created");
-    } catch (err: Error) {
+    } catch (err) {
       throw new Error("Falha ao criar anúncio.");
     }
   };
